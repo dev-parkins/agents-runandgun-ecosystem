@@ -1,65 +1,108 @@
-# 🚀 Agents Run & Gun Ecosystem
+# 🎮 Agents RunAndGun Ecosystem
 
-This is the main orchestrator repository for the agents-runandgun ecosystem, containing all submodules and cross-project coordination.
+**Multi-Project AI-Driven Game Development Platform**
+
+This repository serves as the main orchestrator for the agents-runandgun ecosystem, containing all submodules and cross-project integration.
 
 ## 🏗️ Repository Structure
 
-This repository uses Git submodules to organize the ecosystem:
-
-- **🎮 [game-project](./game-project)**: Godot 4.4 2D side-scrolling Run & Gun game
-- **🤖 [ai-orchestrator](./ai-orchestrator)**: Enterprise-grade TypeScript multi-agent coordination platform
-- **🔌 [vscode-extension](./vscode-extension)**: Copilot Delegator with monetizable features
-- **🔗 [mcp-infrastructure](./mcp-infrastructure)**: Multiple MCP server implementations and integrations
-- **📚 [knowledge-base](./knowledge-base)**: Comprehensive project documentation and knowledge management
-- **🛠️ [development-tools](./development-tools)**: Development automation and ecosystem management
+```
+agents-runandgun-ecosystem/
+├── game-project/           # 🎮 RunAndGun Game (Godot 4.4)
+├── ai-orchestrator/        # 🤖 AI Orchestration Platform
+├── vscode-extension/       # 🔌 VS Code Extension
+├── mcp-infrastructure/     # 🔗 MCP Server Ecosystem
+├── knowledge-base/         # 📚 Documentation & Knowledge
+└── development-tools/      # 🛠️ Development Tools & Scripts
+```
 
 ## 🚀 Quick Start
 
+### Clone with Submodules
 ```bash
-# Clone with submodules
 git clone --recursive https://github.com/dev-parkins/agents-runandgun-ecosystem.git
 cd agents-runandgun-ecosystem
-
-# Or clone and update submodules separately
-git clone https://github.com/dev-parkins/agents-runandgun-ecosystem.git
-cd agents-runandgun-ecosystem
-git submodule init
-git submodule update
 ```
 
-## 📋 Development Workflow
+### Update All Submodules
+```bash
+git submodule update --remote
+```
 
-1. **Clone the ecosystem**: `git clone --recursive`
-2. **Navigate to submodule**: `cd [submodule-name]`
-3. **Make changes**: Edit files in the submodule
-4. **Commit changes**: `git add . && git commit -m "description"`
-5. **Push changes**: `git push origin main`
-6. **Update main repo**: `cd .. && git add [submodule-name] && git commit -m "Update [submodule-name]"`
+### Work on Individual Projects
+```bash
+# Game Development
+cd game-project
+# Open in Godot 4.4
 
-## 🔧 Submodule Management
+# AI Orchestration
+cd ai-orchestrator
+npm install
+npm test
 
+# VS Code Extension
+cd vscode-extension
+npm install
+npm run compile
+```
+
+## 📦 Individual Repositories
+
+- **[runandgun-game](https://github.com/dev-parkins/runandgun-game)**: 2D side-scrolling Run & Gun game
+- **[ai-orchestration-platform](https://github.com/dev-parkins/ai-orchestration-platform)**: Multi-agent coordination system
+- **[copilot-delegator-extension](https://github.com/dev-parkins/copilot-delegator-extension)**: VS Code AI integration
+- **[mcp-server-ecosystem](https://github.com/dev-parkins/mcp-server-ecosystem)**: MCP server implementations
+- **[agents-runandgun-docs](https://github.com/dev-parkins/agents-runandgun-docs)**: Documentation and knowledge base
+- **[agents-runandgun-tools](https://github.com/dev-parkins/agents-runandgun-tools)**: Development tools and scripts
+
+## 🔧 Development Workflow
+
+### Making Changes in Submodules
+```bash
+# 1. Make changes in a submodule
+cd game-project
+# ... make changes ...
+
+# 2. Commit and push in submodule
+git add .
+git commit -m "Update game mechanics"
+git push origin main
+
+# 3. Update main repository
+cd ..
+git add game-project
+git commit -m "Update game-project submodule"
+git push origin main
+```
+
+### Updating Submodules
 ```bash
 # Update all submodules to latest
 git submodule update --remote
 
 # Update specific submodule
-git submodule update --remote [submodule-name]
-
-# Initialize submodules after clone
-git submodule init
-git submodule update
+git submodule update --remote game-project
 ```
 
-## 📚 Documentation
+## 📊 Project Status
 
-- [Strategic Roadmap](./knowledge-base/Strategic%20Roadmap.md)
-- [Current Status](./knowledge-base/Current%20Status.md)
-- [Documentation Index](./knowledge-base/Documentation%20Index.md)
+- **Game Development**: Architecture phase, core systems in development
+- **AI Orchestration**: Production ready (47/47 tests passing)
+- **VS Code Extension**: v0.1.0 Production Ready
+- **MCP Infrastructure**: Multiple servers integrated and active
+- **Documentation**: Comprehensive knowledge base established
+- **Development Tools**: Automation scripts and utilities
 
 ## 🤝 Contributing
 
-Please refer to the individual submodule repositories for specific contribution guidelines.
+Each submodule has its own contribution guidelines. Please refer to the individual repository README files for specific contribution instructions.
 
-## 📄 License
+## 📞 Support
 
-This project is licensed under the same terms as the individual submodules.
+- **Technical Issues**: Check individual repository issue trackers
+- **Ecosystem Questions**: Open issues in this repository
+- **Documentation**: See the knowledge-base submodule
+
+---
+
+**Part of the agents-runandgun ecosystem - Revolutionizing AI-driven game development**
